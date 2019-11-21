@@ -1,0 +1,15 @@
+= Car Rental Project
+Doc Writer <leon.schloemmer@posteo.at>
+v1.0, 2019-11-21
+
+This homework covers a basic project for a car rental company.
+
+== Endpoints
+
+    /api/cars/
+
+returns a list of all all available cars
+
+    /api/availability/{id}
+
+returns all dates when a car is rented
