@@ -4,12 +4,30 @@ v1.0, 2019-11-21
 
 This homework covers a basic project for a car rental company.
 
+Run with
+    
+    ./mvnw compile quarkus:dev
+
 == Endpoints
 
-    /api/cars/
+    GET /api/cars/
 
 returns a list of all all available cars
 
-    /api/availability/{id}
+    GET /api/availability/{id}
 
-returns all dates when a car is rented
+returns all dates when a car is rented out
+
+    POST /api/rental/
+
+expects following content-body
+
+    {
+        carid
+        customerid
+        rentalStart
+        rentalEnd
+    }
+
+== Requirements to be tested
+
